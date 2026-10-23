@@ -1,8 +1,0 @@
-Model,Accuracy,F1-score,AUC,p (AUC vs proposed)
-Fuzzy knowledge base only,0.745 ± 0.052,0.681 ± 0.066,0.806 ± 0.055,0.011
-Logistic regression,0.747 ± 0.049,0.657 ± 0.073,0.808 ± 0.050,0.817
-Random forest,0.760 ± 0.042,0.665 ± 0.067,0.815 ± 0.048,0.112
-Gradient boosting,0.754 ± 0.044,0.656 ± 0.073,0.819 ± 0.047,0.007
-Ablation: feature fusion only,0.757 ± 0.044,0.669 ± 0.068,0.809 ± 0.050,0.650
-Ablation: blend with GB learner,0.758 ± 0.044,0.672 ± 0.069,0.814 ± 0.049,0.016
-KB-AI-DSS (proposed),0.754 ± 0.045,0.667 ± 0.068,0.810 ± 0.051,—

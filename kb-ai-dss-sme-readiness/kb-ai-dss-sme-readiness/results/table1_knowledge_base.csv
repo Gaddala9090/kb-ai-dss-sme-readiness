@@ -1,7 +1,0 @@
-Capability module,Dimension,Indicators (Likert 1–5),Aggregation logic,Rules
-Strategic,Strategy,"str_vision, str_roadmap, str_budget",Compensatory,9
-Strategic,Leadership,"lead_commitment, lead_change, lead_risk",Compensatory,9
-Technological,Data infrastructure,"data_cloud, data_integration, data_quality",Bottleneck,9
-Technological,Digital skills,"skill_analytics, skill_ai, skill_training",Bottleneck,9
-Organizational,Processes,"proc_automation, proc_digitized, proc_customer",Compensatory,9
-Organizational,Innovation culture,"cult_experiment, cult_openness, cult_learning",Compensatory,9
