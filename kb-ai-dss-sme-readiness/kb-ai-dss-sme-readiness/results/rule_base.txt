@@ -1,0 +1,54 @@
+IF strategy is Low AND leadership is Low THEN strategic_cap is Low
+IF strategy is Low AND leadership is Medium THEN strategic_cap is Low
+IF strategy is Low AND leadership is High THEN strategic_cap is Medium
+IF strategy is Medium AND leadership is Low THEN strategic_cap is Low
+IF strategy is Medium AND leadership is Medium THEN strategic_cap is Medium
+IF strategy is Medium AND leadership is High THEN strategic_cap is High
+IF strategy is High AND leadership is Low THEN strategic_cap is Medium
+IF strategy is High AND leadership is Medium THEN strategic_cap is High
+IF strategy is High AND leadership is High THEN strategic_cap is High
+IF data_infrastructure is Low AND digital_skills is Low THEN technological_cap is Low
+IF data_infrastructure is Low AND digital_skills is Medium THEN technological_cap is Low
+IF data_infrastructure is Low AND digital_skills is High THEN technological_cap is Low
+IF data_infrastructure is Medium AND digital_skills is Low THEN technological_cap is Low
+IF data_infrastructure is Medium AND digital_skills is Medium THEN technological_cap is Medium
+IF data_infrastructure is Medium AND digital_skills is High THEN technological_cap is Medium
+IF data_infrastructure is High AND digital_skills is Low THEN technological_cap is Low
+IF data_infrastructure is High AND digital_skills is Medium THEN technological_cap is Medium
+IF data_infrastructure is High AND digital_skills is High THEN technological_cap is High
+IF processes is Low AND innovation_culture is Low THEN organizational_cap is Low
+IF processes is Low AND innovation_culture is Medium THEN organizational_cap is Low
+IF processes is Low AND innovation_culture is High THEN organizational_cap is Medium
+IF processes is Medium AND innovation_culture is Low THEN organizational_cap is Low
+IF processes is Medium AND innovation_culture is Medium THEN organizational_cap is Medium
+IF processes is Medium AND innovation_culture is High THEN organizational_cap is High
+IF processes is High AND innovation_culture is Low THEN organizational_cap is Medium
+IF processes is High AND innovation_culture is Medium THEN organizational_cap is High
+IF processes is High AND innovation_culture is High THEN organizational_cap is High
+IF strategic_cap is Low AND technological_cap is Low AND organizational_cap is Low THEN readiness is Very low
+IF strategic_cap is Low AND technological_cap is Low AND organizational_cap is Medium THEN readiness is Low
+IF strategic_cap is Low AND technological_cap is Low AND organizational_cap is High THEN readiness is Low
+IF strategic_cap is Low AND technological_cap is Medium AND organizational_cap is Low THEN readiness is Low
+IF strategic_cap is Low AND technological_cap is Medium AND organizational_cap is Medium THEN readiness is Low
+IF strategic_cap is Low AND technological_cap is Medium AND organizational_cap is High THEN readiness is Medium
+IF strategic_cap is Low AND technological_cap is High AND organizational_cap is Low THEN readiness is Low
+IF strategic_cap is Low AND technological_cap is High AND organizational_cap is Medium THEN readiness is Medium
+IF strategic_cap is Low AND technological_cap is High AND organizational_cap is High THEN readiness is High
+IF strategic_cap is Medium AND technological_cap is Low AND organizational_cap is Low THEN readiness is Low
+IF strategic_cap is Medium AND technological_cap is Low AND organizational_cap is Medium THEN readiness is Low
+IF strategic_cap is Medium AND technological_cap is Low AND organizational_cap is High THEN readiness is Low
+IF strategic_cap is Medium AND technological_cap is Medium AND organizational_cap is Low THEN readiness is Low
+IF strategic_cap is Medium AND technological_cap is Medium AND organizational_cap is Medium THEN readiness is Medium
+IF strategic_cap is Medium AND technological_cap is Medium AND organizational_cap is High THEN readiness is High
+IF strategic_cap is Medium AND technological_cap is High AND organizational_cap is Low THEN readiness is Medium
+IF strategic_cap is Medium AND technological_cap is High AND organizational_cap is Medium THEN readiness is High
+IF strategic_cap is Medium AND technological_cap is High AND organizational_cap is High THEN readiness is High
+IF strategic_cap is High AND technological_cap is Low AND organizational_cap is Low THEN readiness is Low
+IF strategic_cap is High AND technological_cap is Low AND organizational_cap is Medium THEN readiness is Low
+IF strategic_cap is High AND technological_cap is Low AND organizational_cap is High THEN readiness is Low
+IF strategic_cap is High AND technological_cap is Medium AND organizational_cap is Low THEN readiness is Medium
+IF strategic_cap is High AND technological_cap is Medium AND organizational_cap is Medium THEN readiness is High
+IF strategic_cap is High AND technological_cap is Medium AND organizational_cap is High THEN readiness is High
+IF strategic_cap is High AND technological_cap is High AND organizational_cap is Low THEN readiness is High
+IF strategic_cap is High AND technological_cap is High AND organizational_cap is Medium THEN readiness is High
+IF strategic_cap is High AND technological_cap is High AND organizational_cap is High THEN readiness is Very high

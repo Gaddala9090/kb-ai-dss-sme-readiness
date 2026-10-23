@@ -1,0 +1,212 @@
+{
+  "n_firms": 800,
+  "positive_rate": 0.39125,
+  "n_rules": 54,
+  "full_sample_cv": "10-fold stratified, 5 repeats (50 folds)",
+  "full_sample": {
+    "Fuzzy knowledge base only": {
+      "accuracy": 0.7452500000000001,
+      "f1": 0.6805934344434322,
+      "roc_auc": 0.8061487735215053
+    },
+    "Logistic regression": {
+      "accuracy": 0.7467500000000001,
+      "f1": 0.6574821502623986,
+      "roc_auc": 0.8084072237766077
+    },
+    "Random forest": {
+      "accuracy": 0.7602499999999999,
+      "f1": 0.6650411337593944,
+      "roc_auc": 0.81494143625192
+    },
+    "Gradient boosting": {
+      "accuracy": 0.7544999999999998,
+      "f1": 0.6562304779423432,
+      "roc_auc": 0.8190659716507571
+    },
+    "Ablation: feature fusion only": {
+      "accuracy": 0.7575,
+      "f1": 0.6686007770847179,
+      "roc_auc": 0.8092172327600394
+    },
+    "Ablation: blend with GB learner": {
+      "accuracy": 0.7585,
+      "f1": 0.6716928520790626,
+      "roc_auc": 0.8143745456852096
+    },
+    "KB-AI-DSS (proposed)": {
+      "accuracy": 0.75425,
+      "f1": 0.6668081207291752,
+      "roc_auc": 0.810124465108624
+    }
+  },
+  "learning_curve": {
+    "40": {
+      "auc": {
+        "Ablation: blend with GB learner": 0.7779,
+        "Ablation: feature fusion only": 0.7862,
+        "Fuzzy knowledge base only": 0.8007,
+        "Gradient boosting": 0.7257,
+        "KB-AI-DSS (proposed)": 0.7904,
+        "Logistic regression": 0.7285,
+        "Random forest": 0.7688
+      },
+      "p_vs_random_forest": 0.0003948211669921875,
+      "p_vs_gradient_boosting": 1.9073486328125e-06,
+      "mean_weight_w": 0.535
+    },
+    "80": {
+      "auc": {
+        "Ablation: blend with GB learner": 0.7969,
+        "Ablation: feature fusion only": 0.8001,
+        "Fuzzy knowledge base only": 0.8042,
+        "Gradient boosting": 0.7687,
+        "KB-AI-DSS (proposed)": 0.8023,
+        "Logistic regression": 0.7693,
+        "Random forest": 0.7983
+      },
+      "p_vs_random_forest": 0.24548721313476562,
+      "p_vs_gradient_boosting": 1.9073486328125e-06,
+      "mean_weight_w": 0.4925
+    },
+    "160": {
+      "auc": {
+        "Ablation: blend with GB learner": 0.7984,
+        "Ablation: feature fusion only": 0.7964,
+        "Fuzzy knowledge base only": 0.7972,
+        "Gradient boosting": 0.7882,
+        "KB-AI-DSS (proposed)": 0.8001,
+        "Logistic regression": 0.7776,
+        "Random forest": 0.7994
+      },
+      "p_vs_random_forest": 0.6742229461669922,
+      "p_vs_gradient_boosting": 0.00485992431640625,
+      "mean_weight_w": 0.5750000000000001
+    },
+    "320": {
+      "auc": {
+        "Ablation: blend with GB learner": 0.8051,
+        "Ablation: feature fusion only": 0.8046,
+        "Fuzzy knowledge base only": 0.804,
+        "Gradient boosting": 0.8107,
+        "KB-AI-DSS (proposed)": 0.8046,
+        "Logistic regression": 0.7972,
+        "Random forest": 0.8132
+      },
+      "p_vs_random_forest": 0.0023250579833984375,
+      "p_vs_gradient_boosting": 0.20244979858398438,
+      "mean_weight_w": 0.5974999999999999
+    },
+    "560": {
+      "auc": {
+        "Ablation: blend with GB learner": 0.8096,
+        "Ablation: feature fusion only": 0.8117,
+        "Fuzzy knowledge base only": 0.8006,
+        "Gradient boosting": 0.8194,
+        "KB-AI-DSS (proposed)": 0.8083,
+        "Logistic regression": 0.807,
+        "Random forest": 0.8181
+      },
+      "p_vs_random_forest": 3.62396240234375e-05,
+      "p_vs_gradient_boosting": 0.001689910888671875,
+      "mean_weight_w": 0.5875
+    }
+  },
+  "readiness": {
+    "mean": 44.24603614754802,
+    "sd": 20.45918733786909,
+    "corr_with_outcome": 0.5230395610504445
+  },
+  "final_weight_w": 0.45,
+  "shap_top10": {
+    "readiness": 0.0899,
+    "technological_cap": 0.0422,
+    "organizational_cap": 0.0346,
+    "data_quality": 0.0307,
+    "size_log": 0.0248,
+    "strategic_cap": 0.0244,
+    "proc_customer": 0.0176,
+    "skill_training": 0.0176,
+    "cult_learning": 0.0176,
+    "skill_ai": 0.0172
+  },
+  "knowledge_share_of_shap": 0.44020941015423803,
+  "case_firm": {
+    "index": 190,
+    "readiness": 28.00925925925926,
+    "probability": 0.0951114845985381,
+    "dimension_scores": {
+      "strategy": 2.0,
+      "leadership": 2.67,
+      "data_infrastructure": 2.33,
+      "digital_skills": 3.33,
+      "processes": 3.0,
+      "innovation_culture": 2.33
+    },
+    "ranking": [
+      {
+        "action": "technological_cap (module)",
+        "n_dimensions": 2,
+        "current_score": 2.8333,
+        "readiness_gain": 6.1728,
+        "probability_gain": 0.2367
+      },
+      {
+        "action": "data_infrastructure",
+        "n_dimensions": 1,
+        "current_score": 2.3333,
+        "readiness_gain": 4.4946,
+        "probability_gain": 0.1948
+      },
+      {
+        "action": "organizational_cap (module)",
+        "n_dimensions": 2,
+        "current_score": 2.6667,
+        "readiness_gain": 13.6574,
+        "probability_gain": 0.1698
+      },
+      {
+        "action": "strategic_cap (module)",
+        "n_dimensions": 2,
+        "current_score": 2.3333,
+        "readiness_gain": 13.6574,
+        "probability_gain": 0.165
+      },
+      {
+        "action": "processes",
+        "n_dimensions": 1,
+        "current_score": 3.0,
+        "readiness_gain": 6.713,
+        "probability_gain": 0.0881
+      },
+      {
+        "action": "innovation_culture",
+        "n_dimensions": 1,
+        "current_score": 2.3333,
+        "readiness_gain": 6.713,
+        "probability_gain": 0.0818
+      },
+      {
+        "action": "strategy",
+        "n_dimensions": 1,
+        "current_score": 2.0,
+        "readiness_gain": 5.787,
+        "probability_gain": 0.0669
+      },
+      {
+        "action": "leadership",
+        "n_dimensions": 1,
+        "current_score": 2.6667,
+        "readiness_gain": 5.787,
+        "probability_gain": 0.0658
+      },
+      {
+        "action": "digital_skills",
+        "n_dimensions": 1,
+        "current_score": 3.3333,
+        "readiness_gain": 0.0,
+        "probability_gain": 0.0297
+      }
+    ]
+  }
+}
